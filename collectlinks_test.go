@@ -2,8 +2,8 @@ package collectlinks
 
 import (
   "fmt"
-  "testing"
   "strings"
+  "testing"
 )
 
 func TestAll(t *testing.T) {
@@ -16,7 +16,7 @@ func TestAll(t *testing.T) {
 
   links := All(reader)
 
-fmt.Println(links)
+  fmt.Println(links)
 
   if len(links) != 3 {
     t.Error("Wrong number of links returned")

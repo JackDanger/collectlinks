@@ -10,16 +10,16 @@
 //      "net/http"
 //      "fmt"
 //    )
-//    
+//
 //    func main() {
 //      resp, _ := http.Get("http://motherfuckingwebsite.com")
 //      links := collectlinks.All(resp.Body)
 //      fmt.Println(links)
 //    }
-//    
+//
 //
 // Running that will output:
 //
 //    [http://twitter.com/thebarrytone http://txti.es]
 //
- package collectlinks
+package collectlinks
