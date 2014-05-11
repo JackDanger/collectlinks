@@ -14,7 +14,7 @@ import (
    It does not close the reader passed to it.
 */
 func All(httpBody io.Reader) []string {
-  links := make([]string, 0)
+  var links []string
   page := html.NewTokenizer(httpBody)
   for {
     tokenType := page.Next()
