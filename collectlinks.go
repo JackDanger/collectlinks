@@ -1,5 +1,5 @@
-// This package does the extraordinarily simple operation of parsing a given piece of html
-// and providing you with all the hyperlinks hrefs it finds.
+// Package collectlinks parses a given piece of HTML and provides all the
+// hyperlink hrefs it finds.
 package collectlinks
 
 import (
@@ -7,7 +7,7 @@ import (
   "io"
 )
 
-/* `All` takes a reader object (like the one returned from http.Get())
+/* All takes a reader object (like the one returned from http.Get())
    It returns a slice of strings representing the "href" attributes from
    anchor links found in the provided html.
 
