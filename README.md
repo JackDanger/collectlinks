@@ -6,10 +6,11 @@ return to you a slice of all the href links found.
 Usage:
 
     package main
+
     import (
+      "fmt"
       "github.com/jackdanger/collectlinks"
       "net/http"
-      "fmt"
     )
 
     func main() {
@@ -17,7 +18,6 @@ Usage:
       links := collectlinks.All(resp.Body)
       fmt.Println(links)
     }
-
 
 Running that will output:
 
